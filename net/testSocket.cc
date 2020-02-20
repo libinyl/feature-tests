@@ -4,6 +4,8 @@
 
 int main()
 {
-    int sockfd = socket(AF_INET, SOCK_STREAM, IPPROTO_TCP);
+    int listenfd = socket(AF_INET, SOCK_STREAM, IPPROTO_TCP);
+    listen(listenfd, 0);
+
     for(;;);
 }
